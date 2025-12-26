@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Master Car Showcase — Ultimate Futuristic Edition</title>
+  <link rel="stylesheet" href="projecte.css">
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <small>Preparing your Master Car Showcase…</small>
+  </div>
+
+  <header>
+    <div class="brand">
+      <div class="logo">MT</div>
+      <div>
+        <h1>Master Car Showcase</h1>
+
+      </div>
+    </div>
+
+    <nav>
+
+      <div class="actions">
+        <div class="dropdown" id="brandsDropdown">
+          <button class="btn alt" id="openBrands" aria-haspopup="true" aria-expanded="false">Brands ▾</button>
+           <div class="panel" id="dropdownPanel" role="menu">
+
+            <a class="brand-link" href="#bmw"><img
+                src="https://images.unsplash.com/photo-1724391114112-c83ad59f1d5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJtdyUyMG01fGVufDB8fDB8fHww "
+                alt="BMW">
+              <div>BMW</div>
+            </a>
+        
+
+            <a class="brand-link" href="#bugatti"><img
+                src="
+          https://tse4.mm.bing.net/th/id/OIP.xL021O73RNOzuaeY3_NlxgHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Bugatti">
+              <div>Bugatti</div>
+            </a>
+       
+            <a class="brand-link" href="#rolls"><img
+                src="https://i.pinimg.com/736x/ca/b5/4b/cab54b41f478ea501ea3c23d3cdf7cad.jpg"
+                alt="Rolls">
+              <div>Rolls-Royce</div>
+            </a>
+
+                 <a class="brand-link" href="#mercedes"><img
+                src="https://i.pinimg.com/originals/3f/c8/0f/3fc80f702907db2997486cf2f691b577.jpg"
+                alt="Mercedes">
+              <div>Mercedes</div>
+            </a>
+                        <a class="brand-link" href="#porsche"><img
+                src="https://images.unsplash.com/photo-1659922964423-bbecb913f7ab?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0"
+                alt="Porsche">
+              <div>Porsche</div>
+            </a>
+
+                 <a class="brand-link" href="#lamborghini"><img
+                src="https://th.bing.com/th/id/OIP.pJfHWKZkefO7XXxPR7_0RAHaEK?w=308&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1"
+                alt="Lamborghini">
+              <div>Lamborghini</div>
+            </a>
+
+
+            <a class="brand-link" href="#mclaren"><img
+                src="https://images.unsplash.com/photo-1700704054160-cfc3e3705707?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1jbGFyZW58ZW58MHx8MHx8fDA%3D"
+                alt="McLaren">
+              <div>McLaren</div>
+            </a>
+            <a class="brand-link" href="#defender"><img
+                src="https://wallpapercave.com/dwp1x/wp15179260.webp"
+                alt="Defender">
+              <div>Defender</div>
+            </a>
+            <a class="brand-link" href="#bentley"><img
+                src="https://4kwallpapers.com/images/walls/thumbs/24672.jpg"
+                alt="Bentley">
+              <div>Bentley</div>
+            </a>
+
+          </div>
+        </div>
+        <audio id="bgMusic" src="my music.mp3"></audio>
+
+        <button id="musicBtn" class="btn">Play Music</button>
+        <button class="btn alt"
+          onclick="document.getElementById('grid').scrollIntoView({behavior:'smooth'})">Explore</button>
+      </div>
+    </nav>
+  </header>
+  <script>
+    const music = document.getElementById("bgMusic");
+    const btn = document.getElementById("musicBtn");
+
+    btn.onclick = () => {
+      music.play();
+    };
+  </script>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <div class="M">Ultimate Futuristic Car Showcase</div>
+        <div class="T">All your favorite brands — images, videos, official links and immersive music. Scroll or
+          use the Brands menu.</div>
+        <div class="player">
+          <div style="margin-top:12px;display:flex;gap:12px;align-items:center">
+            <div class="bars" aria-hidden="true">
+              <div class="bar" style="height:8px"></div>
+              <div class="bar" style="height:14px"></div>
+              <div class="bar" style="height:6px"></div>
+              <div class="bar" style="height:18px"></div>
+              <div class="bar" style="height:10px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="cover"><img
+            src="logo.jpg"
+            alt="Featured"></div>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <button class="btn" onclick="document.getElementById('grid').scrollIntoView({behavior:'smooth'})">View
+            Collection</button>
+
+          <a href="#contact" class="btn alt">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="grid" class="grid">
+
+      <article id="bmw" class="card">
+        <div class="media"><img
+            src="https://images.unsplash.com/photo-1724391114112-c83ad59f1d5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJtdyUyMG01fGVufDB8fDB8fHww"
+            alt="BMW"></div>
+        <h3>BMW</h3>
+        <p>BMW — Precision engineering, driving dynamics and luxury since 1916.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.bmw-gallopsautohaus.in/','_blank')">Official
+            Site</button>
+          <button class="btn alt" onclick="openVideo('meets-video/bmw.mp4')">Play Video</button>  
+        </div>
+      </article>
+
+                  <article id="bugatti" class="card">
+        <div class="media"><img
+            src="https://tse4.mm.bing.net/th/id/OIP.xL021O73RNOzuaeY3_NlxgHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Bugatti"></div>
+        <h3>Bugatti</h3>
+        <p>Bugatti — Hypercar engineering that redefines speed and luxury.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.bugatti.com/','_blank')">Official Site</button>
+          <button class="btn alt" onclick="openVideo('meets video/BUGATTI%20CHIRON.mp4')">Play Video</button>
+        </div>
+      </article>
+
+   
+      
+  
+      <article id="rolls" class="card">
+        <div class="media"><img
+            src="https://i.pinimg.com/736x/ca/b5/4b/cab54b41f478ea501ea3c23d3cdf7cad.jpg"
+            alt="Rolls-Royce"></div>
+        <h3>Rolls-Royce</h3>
+        <p>Rolls-Royce — Handcrafted luxury and timeless craftsmanship.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.rolls-roycemotorcars.com','_blank')">Official
+            Site</button>
+          <button class="btn alt" onclick="openVideo('meets video/Rolls-Royce%20Ghost.mp4')">Play Video</button>
+        </div>
+      </article>
+
+        <article id="mercedes" class="card">
+        <div class="media"><img
+            src="https://i.pinimg.com/originals/3f/c8/0f/3fc80f702907db2997486cf2f691b577.jpg"
+            alt="Mercedes"></div>
+        <h3>Mercedes-Benz</h3>
+        <p>Mercedes — Luxury innovation, comfort and safety with a historic legacy.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.mercedes.com','_blank')">Official Site</button>
+          <button class="btn alt" onclick="openVideo('meets video/mercedes.mp4')">Play Video</button>
+        </div>
+      </article>
+
+
+      <article id="porsche" class="card">
+        <div class="media"><img
+            src="https://images.unsplash.com/photo-1659922964423-bbecb913f7ab?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0"
+            alt="Porsche"></div>
+        <h3>Porsche</h3>
+        <p>Porsche — Sports-car legend mixing race-bred performance with daily usability.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.porsche.com','_blank')">Official Site</button>
+          <button class="btn alt" onclick="openVideo('meets video/porche.mp4')">Play Video</button>
+        </div>
+      </article>
+
+      
+      <article id="lamborghini" class="card">
+        <div class="media"><img
+            src="https://th.bing.com/th/id/OIP.pJfHWKZkefO7XXxPR7_0RAHaEK?w=308&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1"
+            alt="Lamborghini"></div>
+        <h3>Lamborghini</h3>
+        <p>Lamborghini — Italian supercar artistry — extreme design and performance.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.lamborghini.com/en-en#val-ht','_blank')">Official
+            Site</button>
+          <button class="btn alt" onclick="openVideo('main folder/meets video/lamborghini.mp4')">Play Video</button>
+        </div>
+      </article>
+
+
+
+
+
+      <article id="mclaren" class="card">
+        <div class="media"><img
+            src="https://images.unsplash.com/photo-1700704054160-cfc3e3705707?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1jbGFyZW58ZW58MHx8MHx8fDA%3D"
+            alt="McLaren"></div>
+        <h3>McLaren</h3>
+        <p>McLaren — Racing-bred performance and lightweight engineering.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.mclaren.com/','_blank')">Official Site</button>
+          <button class="btn alt" onclick="openVideo('meets video/mcleran.mp4')">Play Video</button>
+        </div>
+      </article>
+
+
+       <article id="defender" class="card">
+        <div class="media"><img
+            src="https://wallpapercave.com/dwp1x/wp15179260.webp"
+            alt="Defender"></div>
+        <h3>Land Rover Defender</h3>
+        <p>Defender — Rugged capability with modern tech for off-road exploration.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.landrover.in/index.html','_blank')">Official
+            Site</button>
+          <button class="btn alt" onclick="openVideo('meets video/Defender.mp4')">Play Video</button>
+        </div>
+      </article>
+
+      <article id="bentley" class="card">
+        <div class="media"><img
+            src="https://4kwallpapers.com/images/walls/thumbs/24672.jpg"
+            alt="Bentley"></div>
+        <h3>Bentley</h3>
+        <p>Bentley — Grand touring luxury, handcrafted interiors and refined performance.</p>
+        <div class="controls">
+          <button class="btn" onclick="window.open('https://www.bentleymotors.com/en.html','_blank')">Official
+            Site</button>
+          <button class="btn alt" onclick="openVideo('meets video/bentley.mp4')">Play Video</button>
+        </div>
+      </article>
+
+    </section>
+
+
+    <footer id="contact" class="wave-footer">
+      <div class="footer-content">
+        &copy;2025 all rights reserved. <br>
+          meetsanjaygoswami@gmail.com | mobile No: +91 7041761119<break><br>
+   
+        Built & designed by Meet Goswami — Master Car Showcase • Futuristic Edition</break>
+      </div>
+    </footer>
+
+  </main>
+
+ 
+  <div id="modal" class="modal" role="dialog" aria-hidden="true">
+    <div class="box">
+      <div style="display:flex;justify-content:flex-end"><button class="close" onclick="closeVideo()">✕</button></div>
+      <video id="modalVideo" controls playsinline></video>
+    </div>
+  </div>
+
+
+
+  <script>
+    // Hide loader after everything ready (or after timeout)
+    const loader = document.getElementById('loader');
+    function hideLoader() { if (loader) { loader.classList.add('hidden'); setTimeout(() => loader.remove(), 800); } }
+    window.addEventListener('load', () => { hideLoader(); });
+    // safety fallback: hide loader after 6s even if load didn't fire
+    setTimeout(hideLoader, 6000);
+
+    // Dropdown open/close
+    const dd = document.getElementById('brandsDropdown'); const openBtn = document.getElementById('openBrands');
+    openBtn.addEventListener('click', (e) => { e.stopPropagation(); dd.classList.toggle('open'); openBtn.setAttribute('aria-expanded', dd.classList.contains('open')) });
+    document.addEventListener('click', () => dd.classList.remove('open'));
+    document.getElementById('dropdownPanel').addEventListener('click', (e) => e.stopPropagation());
+
+    // Smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => { a.addEventListener('click', function (e) { const id = this.getAttribute('href').slice(1); if (!id) return; e.preventDefault(); const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); dd.classList.remove('open'); }); });
+
+    // Search filter in dropdown
+    const search = document.getElementById('searchInput'); search.addEventListener('input', () => {
+      const q = search.value.trim().toLowerCase(); document.querySelectorAll('.brand-link').forEach(link => { const txt = link.textContent.toLowerCase(); link.style.display = txt.includes(q) ? 'flex' : 'none'; });
+    });
+
+    // Video modal
+    const modal = document.getElementById('modal'); const modalVideo = document.getElementById('modalVideo');
+    function openVideo(src) { modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); modalVideo.src = src; modalVideo.play().catch(() => { }); document.body.style.overflow = 'hidden'; }
+    function closeVideo() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); modalVideo.pause(); modalVideo.src = ''; document.body.style.overflow = ''; }
+    window.openVideo = openVideo; window.closeVideo = closeVideo;
+
+    // Music controls + visualizer
+    const bg = document.getElementById('bgAudio'); const playToggle = document.getElementById('playToggle'); const musicBtn = document.getElementById('musicBtn'); const bars = document.querySelectorAll('.bar');
+    let playing = false;
+    function animateBars() { if (!playing) { bars.forEach(b => { b.style.height = '6px'; b.style.opacity = '0.12'; }); return; } bars.forEach((b, i) => { const h = 6 + Math.round(Math.random() * 24); b.style.height = h + 'px'; b.style.opacity = (0.4 + Math.random() * 0.8).toFixed(2); }); }
+    const barTicker = setInterval(animateBars, 180);
+    function toggleMusic() { if (!bg) return; if (bg.paused) { bg.play().catch(() => { }); playing = true; musicBtn.textContent = 'Music On'; playToggle.textContent = 'Pause'; } else { bg.pause(); playing = false; musicBtn.textContent = 'Music Off'; playToggle.textContent = 'Play'; } }
+    if (playToggle) playToggle.addEventListener('click', toggleMusic); if (musicBtn) musicBtn.addEventListener('click', toggleMusic);
+
+    // close modal on ESC
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeVideo(); dd.classList.remove('open'); } });
+
+    // accessibility: prevent tabbing outside modal when open (simple trap)
+    modal.addEventListener('keydown', (e) => { if (e.key === 'Tab') e.preventDefault(); });
+  </script>
+</body>
+
+</html>
